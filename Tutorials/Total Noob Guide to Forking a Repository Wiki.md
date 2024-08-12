@@ -6,7 +6,7 @@ Although Github does allow direct editing of wikis (in fact, pull requests aren'
 
 You might be thinking, *"Oh, I know! I just have to fork the repo and then edit the wiki on my fork."*
 
- Unfortunately, it's not quite that simple. When you fork a repository in Github, any existing wiki pages **will not** be copied onto your fork. Instead, your forked repo will only have an empty wiki. This is because Github actually treats the wiki as a *separate repository* from the main one.
+ Unfortunately, it's not quite that simple. When you fork a repository in Github, any existing wiki pages **will not** be copied onto your fork. This is because Github actually treats the wiki as a *separate repository* from the main one.
 
 If you just want to make some changes for yourself or use the wiki as a reference, you can clone the wiki repository and edit it locally. But if you want the project owner to actually review and potentially even commit your changes, you'll need a way for them to actually see your edits.
 
@@ -19,25 +19,25 @@ If that was a little *too* short, here's a step-by-step explanation:
 ## Step 1: Fork the repository
 In the upper right of the repository's main page, click the Fork button to create your own copy of the repo. 
 
-![alt text](content/images/forking-repository.png)
+![alt text](<../Media/Wiki Fork Guide/forking-repository.png>)
 
 ## Step 2: Clone the wiki
 
 After forking the repo, go to the wiki tab of your newly-forked repo.
 
-![alt text](content/images/wiki1.png)
+![alt text](<../Media/Wiki Fork Guide/wiki1.png>)
 
 You should see that your wiki currently has no content. Press the "Create the first page" button to create a home page for your wiki.
 
-![alt text](content/images/wiki2.png)
+![alt text](<../Media/Wiki Fork Guide/wiki2.png>)
 
 You don't have to actually write anything here! Just click save page on the bottom right. This step is just to populate your wiki with *something* in order to create a repo you can push changes to later on.
 
-![alt text](content/images/creating_home_page.PNG)
+![alt text](<../Media/Wiki Fork Guide/creating_home_page.PNG>)
 
 After saving your home page, a link to it will appear in the bottom right of your wiki. Copy and paste this URL somewhere -- you'll need it later. <a name="Step2"></a>
 
-![alt text](content/images/clone_link1.PNG)
+![alt text](<../Media/Wiki Fork Guide/clone_link1.PNG>)
 
 Next, you'll want to clone the *original* wiki onto your machine. Go back to the original repository you made the fork from, and navigate to *its* wiki.
 
@@ -53,11 +53,11 @@ Now you can finally start editing!
 
 On your machine, navigate to the folder where your local copy of the wiki is stored. You'll notice that it contains a bunch of .md files. Each wiki page that you see on Github is stored in one of these .md files.
 
-![alt text](content/images/local_repository.PNG)
+![alt text](<../Media/Wiki Fork Guide/local_repository.PNG>)
 
 Once you know which page you want to edit, open the corresponding .md file in your editor of choice (the image below shows Visual Studio Code) and make your changes.
 
-![alt text](content/images/editing_md.png)
+![alt text](<../Media/Wiki Fork Guide/editing_md.png>)
 
 ## Step 4: Push your edits
 
