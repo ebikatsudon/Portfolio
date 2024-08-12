@@ -39,11 +39,11 @@ After saving your home page, a link to it will appear in the bottom right of you
 
 ![alt text](<../Media/Wiki Fork Guide/clone_link1.PNG>)
 
-Next, you'll want to clone the *original* wiki onto your machine. Go back to the original repository you made the fork from, and navigate to *its* wiki.
+Next, you'll want to clone the *original* wiki onto your machine. Go back to the original repository you made the fork from, and navigate to *its* wiki. The link to clone it should again be on the bottom right right. Copy that link.
 
-Just as you saw with your newly-created wiki,there should be a link to clone the original wiki on the bottom right. Copy that link. Then, open your Git terminal and run the following to clone the original wiki to your machine:
+ Then, open your Git terminal and run the following to clone the original wiki to your machine:
 
-    // Run this to clone the wiki. Don't forget to replace the link!
+    // Clones the wiki. Don't forget to replace the link!
 
     git clone https://github.com/username/project-name.wiki.git
 
@@ -63,23 +63,23 @@ Once you know which page you want to edit, open the corresponding .md file in yo
 
 When you're done editing, you'll want to push those changes back onto your forked repo. Make sure all your changes have been saved, then stage and commit your file(s):
 
-    // Run this to stage your changes. Make sure you are in the correct directory!
+    // Stages your changes. Make sure you are in the correct directory!
 
     git add .
     
-    // Run this to commit your changes.
+    // Commits your changes.
 
     git commit -m "Your commit message here"
 
 Before you push your changes, you'll want to make sure to add your forked wiki as a remote repository. To do this, you'll need the URL you copied previously in [Step 2](#Step2).
 
-    // Run this to add your forked wiki as a remote repository.
+    // Adds your forked wiki as a remote repository.
 
     git remote add fork https://github.com/ebikatsudon/VTubeStudio.wiki.git
 
-Finally, you can push your changes. You'll need to use the force command (-f) so that git overwrites your empty placeholder wiki with all of the files you've cloned and changed.
+Finally, you can push your changes. You'll need to use the force command `-f` so that git overwrites your empty placeholder wiki with all of the files you've cloned and changed.
 
-    // Run this to push your file onto Github.
+    // Pushes your file onto Github.
     
     git push -f fork master
 
