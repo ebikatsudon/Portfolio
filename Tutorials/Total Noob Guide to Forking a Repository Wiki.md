@@ -10,11 +10,7 @@ You might be thinking, *"Oh, I know! I just have to fork the repo and then edit 
 
 If you just want to make some changes for yourself or use the wiki as a reference, you can clone the wiki repository and edit it locally. But if you want the project owner to actually review and potentially even commit your changes, you'll need a way for them to actually see your edits.
 
-In theory, you could open an issue in the original repo (assuming issues are enabled) and suggest your edits there. However, if you're dead-set on getting your edited wiki onto Github, there IS a workaround:
-
-#### TL;DR explanation: Fork the repo, clone the wiki, edit the wiki, push the edits.
-
-If that was a little *too* short, here's a step-by-step explanation:
+In theory, you could open an issue in the original repo (assuming issues are enabled) and suggest your edits there. However, if you're dead-set on getting your edited wiki onto Github, below is a step-by-step process. As an example, we will be making a fork of the wiki for the [OBS Project](https://github.com/obsproject/obs-studio/wiki).
 
 ## Step 1: Fork the repository
 In the upper right of the repository's main page, click the Fork button to create your own copy of the repo. 
@@ -35,23 +31,29 @@ You don't have to actually write anything here! Just click save page on the bott
 
 ![alt text](<../Media/Wiki Fork Guide/creating_home_page.PNG>)
 
-After saving your home page, a link to it will appear in the bottom right of your wiki. Copy and paste this URL somewhere -- you'll need it later. <a name="Step2"></a>
+After saving your home page, a link to it will appear in the bottom right of your wiki. Copy this link.
 
 ![alt text](<../Media/Wiki Fork Guide/clone_link1.PNG>)
 
+You'll want to add this newly-created wiki as a remote repository so you can push your changes to it later on. Open your git terminal and run the following:
+
+    // Adds your forked wiki as a remote repository.
+
+    git remote add fork https://github.com/ebikatsudon/forked_repository.wiki.git
+
 Next, you'll want to clone the *original* wiki onto your machine. Go back to the original repository you made the fork from, and navigate to *its* wiki. The link to clone it should again be on the bottom right right. Copy that link.
 
- Then, open your Git terminal and run the following to clone the original wiki to your machine:
+ Run the following in your git terminal to clone the original wiki to your machine:
 
-    // Clones the wiki. Don't forget to replace the link!
+    // Clones the wiki.
 
-    git clone https://github.com/username/project-name.wiki.git
+    git clone https://github.com/obsproject/obs-studio.wiki.git
 
 Now you can finally start editing!
 
 ## Step 3: Edit the wiki
 
-On your machine, navigate to the folder where your local copy of the wiki is stored. You'll notice that it contains a bunch of .md files. Each wiki page that you see on Github is stored in one of these .md files.
+On your machine, navigate to the folder where your local copy of the wiki is stored. You'll notice that it contains a bunch of Markdown (.md) files. Each wiki page that you see on Github is stored in one of these files.
 
 ![alt text](<../Media/Wiki Fork Guide/local_repository.PNG>)
 
@@ -61,21 +63,21 @@ Once you know which page you want to edit, open the corresponding .md file in yo
 
 ## Step 4: Push your edits
 
-When you're done editing, you'll want to push those changes back onto your forked repo. Make sure all your changes have been saved, then stage and commit your file(s):
+When you're done editing, you'll want to push those changes back onto your forked repo. First, make sure to set your working directory in git to the correct one.
 
-    // Stages your changes. Make sure you are in the correct directory!
+    // Changes your current working directory to the one specified. The file path will vary depending on where you cloned the original repository.
+
+    cd /c/Users/ebikatsudon/obs-studio.wiki
+
+Then stage and commit your file(s).
+
+    // Stages your changes.
 
     git add .
     
     // Commits your changes.
 
     git commit -m "Your commit message here"
-
-Before you push your changes, you'll want to make sure to add your forked wiki as a remote repository. To do this, you'll need the URL you copied previously in [Step 2](#Step2).
-
-    // Adds your forked wiki as a remote repository.
-
-    git remote add fork https://github.com/ebikatsudon/VTubeStudio.wiki.git
 
 Finally, you can push your changes. You'll need to use the force command `-f` so that git overwrites your empty placeholder wiki with all of the files you've cloned and changed.
 
