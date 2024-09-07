@@ -1,0 +1,1 @@
+This manual walks you through the assembly instructions for the IKEA Pahl desk, item number
