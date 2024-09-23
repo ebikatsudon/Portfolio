@@ -4,7 +4,7 @@ This manual is a written version of the assembly instructions for the IKEA Pahl 
 
 ## Safety Warning
 
-To protect the desk and surroundings from damage during assembly, use a carpet, blanket, or other shock-absorbing material. Make sure there's also enough space around you while you work.
+To protect the desk and surroundings from damage during assembly, use a carpet, blanket, or other shock-absorbing material. Make sure there is also enough space around you while you work.
 
 If you have any questions or concerns about the assembly process, please contact the IKEA store where you bought your product.
 
