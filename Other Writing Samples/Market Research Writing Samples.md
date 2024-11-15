@@ -1,4 +1,4 @@
-Hello and welcome to my portfolio! Below are some links to various (non-technical) articles I have written in the past. These articles incorporate data points from consumer research and aim to inform restaurants/food and beverage providers of growing trends that could help their businesses.
+Below are some links to various (non-technical) articles I have written in the past. These articles incorporate data points from consumer research and aim to inform restaurants/food and beverage providers of growing trends that could help their businesses.
 
 ## SmartBrief
 
